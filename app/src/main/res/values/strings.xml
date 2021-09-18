@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Status Saver</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="switch_whatsapp">Switch To WhatsApp</string>
+    <string name="switch_whatsapp_business">Switch To WhatsApp Business</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MediaViewActivity">
+
+  <ImageView
+      android:id="@+id/imagePlace"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:foregroundGravity="center"
+      android:layout_marginTop="10dp"
+      android:layout_marginBottom="20dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintBottom_toTopOf="@id/saveButton"/>
+  <com.google.android.exoplayer2.ui.StyledPlayerView
+      android:id="@+id/videoPlace"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:layout_marginTop="10dp"
+      android:layout_marginBottom="20dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintBottom_toTopOf="@id/saveButton"
+      />
+
+  <com.google.android.material.floatingactionbutton.FloatingActionButton
+      android:id="@+id/shareButton"
+      android:src="@drawable/share_img"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_margin="40dp"
+      app:backgroundTint="#25D366"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@id/guidelineVer" />
+
+  <com.google.android.material.floatingactionbutton.FloatingActionButton
+      android:id="@+id/saveButton"
+      android:src="@drawable/save_img"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_margin="40dp"
+      android:padding="10dp"
+      app:backgroundTint="#25D366"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toStartOf="@id/guidelineVer"
+      app:layout_constraintStart_toStartOf="parent" />
+
+  <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/guidelineVer"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      app:layout_constraintGuide_percent="0.5" />
+
+  <ImageView
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_marginTop="18dp"
+      android:background="#25D366"
+      android:padding="10dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="@id/saveButton"
+      app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
